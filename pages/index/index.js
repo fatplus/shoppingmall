@@ -14,26 +14,26 @@ Page({
     this.getFloorList()
   },
   getSwiperList() {
-    request({url:'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata'})
-    .then(result => {
+    request({url:'/home/swiperdata'})
+    .then(res => {
       this.setData({
-        swiperList: result.data.message
+        swiperList: res
       })
     })
   },
   getCateList() {
-    request({url:'https://api-hmugo-web.itheima.net/api/public/v1/home/catitems'})
-    .then(result => {
+    request({url:'/home/catitems'})
+    .then(res => {
       this.setData({
-        catesList: result.data.message
+        catesList: res
       })
     })
   },
   getFloorList() {
-    request({url:'https://api-hmugo-web.itheima.net/api/public/v1/home/floordata'})
-    .then(result => {
+    request({url:'/home/floordata'})
+    .then(res => {
       this.setData({
-        floorList: result.data.message
+        floorList: res
       })
     })
   }
