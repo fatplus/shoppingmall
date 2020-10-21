@@ -2,7 +2,7 @@ let ajaxTimes = 0;
 export const request = (params) => {
   let header = {...params.header}
   if(params.url.includes('/my/')) {
-    header['Authorization'] = wx.StorageSync('token')
+    header['Authorization'] = wx.getStorageSync('token')
   }
 
   ajaxTimes++

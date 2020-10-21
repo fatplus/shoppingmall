@@ -101,6 +101,28 @@
           "id": -1,
           "name": "支付界面",
           "pathName": "pages/pay/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "登录页面",
+          "pathName": "pages/login/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "个人中心",
+          "pathName": "pages/user/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "全部订单",
+          "pathName": "pages/order/index",
+          "query": "type=1",
           "scene": null
         }
       ]
